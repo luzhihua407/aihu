@@ -1,0 +1,88 @@
+/* pages/file/letters.wxss */
+@import "../../weui.wxss";
+
+page, .page, .page__bd {
+  height: 100%;
+}
+
+.page__bd {
+  padding-bottom: 0;
+}
+
+.weui-tab__content {
+  padding-top: 60rpx;
+  text-align: center;
+}
+
+.letter {
+  font-size: 300rpx;
+  margin-top: -60rpx;
+  text-align: center;
+}
+
+.voice {
+  font-size: 50rpx;
+  padding-top: 10rpx;
+  text-align: center;
+}
+
+.capital {
+  font-size: 50rpx;
+  text-align: center;
+}
+
+.button-sp-area {
+  margin: 0 auto;
+  padding-bottom: 15rpx;
+  width: 60%;
+}
+
+.placeholder {
+  margin: 5rpx;
+  padding: 0 10rpx;
+  text-align: center;
+  background-color: #ebebeb;
+  height: 4.3em;
+  line-height: 4.3em;
+  color: #000;
+}
+
+.weui-navbar__item {
+  background-color: #ffffff;
+}
+
+.button-hover {
+  background-color: green;
+}
+
+.btn-hover {
+  color: white;
+  border-color: green;
+  background-color: green;
+}
+
+.play {
+  width: 40px;
+  height: 40px;
+}
+
+.play-hover {
+  background-color: lightgrey;
+}
+
+.remind {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -16px; /* 高度的一半 */
+  margin-left: -16px; /* 宽度的一半 */
+}
+swiper{
+  height: 100%;
+}
+.weui-tab__panel{
+  background-color: #ffffff
+}
+

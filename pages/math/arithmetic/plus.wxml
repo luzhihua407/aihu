@@ -1,0 +1,134 @@
+<view class="page">
+  <view class="page__hd">
+
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <view class="weui-flex number">
+      <view class="weui-flex__item">
+        <view>
+          <image src='' style='width:32px;height:32px;'></image>
+        </view>
+        <view>
+          <image src='/images/number_{{first}}.png' style='width:32px;height:32px;'></image>
+        </view>
+        <view>
+          <image src='' style='width:32px;height:32px;'></image>
+        </view>
+      </view>
+      <view class="weui-flex__item">
+        <view>
+          <image src='' style='width:32px;height:32px;'></image>
+        </view>
+        <view>
+          <image src='/images/number_{{second}}.png' style='width:32px;height:32px;'></image>
+        </view>
+        <view>
+          <image src='' style='width:32px;height:32px;'></image>
+        </view>
+      </view>
+      <view class="weui-flex__item">
+        <view>
+          <image src='' style='width:32px;height:32px;'></image>
+        </view>
+        <view>
+          <image src='/images/plus.png' style='width:32px;height:32px;'></image>
+        </view>
+        <view>
+          <image src='' style='width:32px;height:32px;'></image>
+        </view>
+      </view>
+      <view class="weui-flex__item">
+        <view>
+          <image src='' style='width:32px;height:32px;'></image>
+        </view>
+        <view>
+          <image src='/images/number_{{third}}.png' style='width:32px;height:32px;'></image>
+        </view>
+        <view>
+          <image src='' style='width:32px;height:32px;'></image>
+        </view>
+      </view>
+      <view class="weui-flex__item">
+        <view>
+          <image src='' style='width:32px;height:32px;'></image>
+        </view>
+        <view>
+          <image src='/images/number_{{fourth}}.png' style='width:32px;height:32px;'></image>
+        </view>
+        <view>
+          <image src='' style='width:32px;height:32px;'></image>
+        </view>
+      </view>
+      <view class="weui-flex__item">
+        <view>
+          <image src='' style='width:32px;height:32px;'></image>
+        </view>
+        <view>
+          <image src='/images/equal.png' style='width:32px;height:32px;'></image>
+        </view>
+        <view>
+          <image src='' style='width:32px;height:32px;'></image>
+        </view>
+      </view>
+      <view class="weui-flex__item">
+        <view>
+          <image src='/images/arrow-up.png' data-value="{{tenCurval}}" style='width:32px;height:32px;' bindtap='minusOne'></image>
+        </view>
+        <view>
+          <image src='{{tenImage}}' style='width:32px;height:32px;'></image>
+        </view>
+        <view>
+          <image src='/images/arrow-down.png' data-value="{{tenCurval}}" style='width:32px;height:32px;' bindtap='addOne'></image>
+        </view>
+      </view>
+      <view class="weui-flex__item">
+        <view>
+          <image src='/images/arrow-up.png' style='width:32px;height:32px;' bindtap='minusOne' data-value="{{oneCurval}}" id="one"></image>
+        </view>
+        <view>
+          <image src='{{oneImage}}' style='width:32px;height:32px;' id="result"></image>
+        </view>
+        <view>
+          <image src='/images/arrow-down.png' style='width:32px;height:32px;' bindtap='addOne' data-value="{{oneCurval}}" id="one"></image>
+        </view>
+      </view>
+    </view>
+    <view class="weui-flex number">
+      <view class="weui-flex__item">
+        <button class="weui-btn mini-btn" type="primary" size="mini" bindtap='question'>出题</button>
+      </view>
+      <view class="weui-flex__item">
+        <button class="weui-btn mini-btn" type="primary" size="mini"  bindtap='answer'>答案</button>
+      </view>
+      <view class="weui-flex__item">
+       <button class="weui-btn mini-btn" type="primary" size="mini"bindtap='commit'>交卷</button>
+      </view>
+    </view>
+    <view class='number'>{{answer}}</view>
+    <view class='number'><image class='score' src='{{score}}'></image></view>
+  </view>
+    <view class="weui-flex">
+      <view class="weui-flex__item">
+        <view>
+          <image src='/images/number_1.png' style='width:32px;height:32px;'></image>
+        </view>
+        </view>
+        <view class="weui-flex__item">
+        <view>
+          <image src='/images/number_2.png' style='width:32px;height:32px;'></image>
+        </view>
+      </view>
+    </view>
+    <view class="weui-flex">
+      <view class="weui-flex__item">
+        <view>
+          <image src='/images/number_1.png' style='width:32px;height:32px;'></image>
+        </view>
+        </view>
+        <view class="weui-flex__item">
+        <view>
+          <image src='/images/number_2.png' style='width:32px;height:32px;'></image>
+        </view>
+      </view>
+    </view>
+</view>

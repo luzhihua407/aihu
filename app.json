@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/navbar/navbar",
+    "pages/letter/initial/initial",
+    "pages/letter/final/final",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/letter/english/english",
+    "pages/math/arithmetic/plus",
+    "pages/math/arithmetic/minus",
+    "pages/method/method",
+    "pages/letter/initial/exam"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "学习",
+        "iconPath": "images/office-default.png",
+        "selectedIconPath": "images/office.png"
+      },
+      {
+        "pagePath": "pages/letter/initial/exam",
+        "text": "练习",
+        "iconPath": "images/survey-default.png",
+        "selectedIconPath": "images/survey.png"
+      }
+    ]
+  },
+  "debug": false
+}

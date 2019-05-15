@@ -1,0 +1,43 @@
+page, .page, .page__bd {
+  height: 100%;
+}
+
+.page__bd {
+  padding-bottom: 0;
+}
+.weui-navbar{
+  background-color: white;
+}
+.weui-tab__content {
+  padding-top: 60px;
+  text-align: center;
+}
+
+/* pages/file/letters.wxss */
+
+.letter {
+  font-size: 400rpx;
+  margin-top: -100px;
+  margin-bottom: -50px;
+}
+
+.voice {
+  font-size: 20pt;
+  text-align: center;
+}
+
+.button-sp-area {
+  margin: 0 auto;
+  padding-top: 15px;
+  width: 60%;
+}
+
+.placeholder {
+  margin: 5px;
+  padding: 0 10px;
+  text-align: center;
+  background-color: #ebebeb;
+  height: 2.3em;
+  line-height: 2.3em;
+  color: #000;
+}

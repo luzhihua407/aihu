@@ -1,0 +1,28 @@
+<view class="page">
+  <view class="page__hd">
+
+  </view>
+  <view class="page__bd page__bd_spacing">
+
+    <view class="weui-flex">
+      <view class="weui-flex__item">
+        <view class="placeholder" hover-class="btn-hover" hover-start-time="5" bindtap='openPage' data-url="/pages/letter/initial/initial">声母</view>
+      </view>
+      <view class="weui-flex__item">
+        <view class="placeholder" hover-class="btn-hover" hover-start-time="5" bindtap='openPage' data-url="/pages/letter/final/final">韵母</view>
+      </view>
+      <view class="weui-flex__item">
+        <view class="placeholder" hover-class="btn-hover" hover-start-time="5" bindtap='openPage' data-url="/pages/letter/english/english">字母</view>
+      </view>
+    </view>
+
+    <view class="weui-flex">
+      <view class="weui-flex__item">
+        <view class="placeholder" hover-class="btn-hover" hover-start-time="5" bindtap='openPage' data-url="/pages/math/arithmetic/plus">加法</view>
+      </view>
+      <view class="weui-flex__item">
+        <view class="placeholder" hover-class="btn-hover" hover-start-time="5" bindtap='openPage' data-url="/pages/math/arithmetic/minus">减法</view>
+      </view>
+    </view>
+  </view>
+</view>

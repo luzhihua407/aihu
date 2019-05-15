@@ -1,0 +1,16 @@
+.placeholder{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #EBEBEB;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #000000;
+}
+.btn-hover{
+  background-color: green;
+  color: white;
+}
+page{
+  background-color: white;
+}

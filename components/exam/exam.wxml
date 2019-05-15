@@ -1,0 +1,31 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="button-sp-area">
+      <button hover-class="play-hover" class='play' bindtap='play' data-currentletter="{{currentLetter}}">
+        <image src='/images/playon.png'></image>
+      </button>
+    </view>
+     <form bindsubmit="confirm">
+    <view class="weui-cells">
+   
+      <input name="currentLetter" hidden value="{{currentLetter}}"></input>
+      <radio-group bindchange="radioChange" name="answer">
+        <label class="weui-cell weui-check__label" wx:for="{{radioItems}}" wx:key="value">
+          <radio class="weui-check" value="{{item.letter}}" checked="{{item.checked}}" />
+
+          <view class="weui-cell__bd" class="letter">{{item.letter}}</view>
+          <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+            <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+          </view>
+        </label>
+      </radio-group>
+    </view>
+    <view class="button-sp-area ">
+      <button form-type="submit" class="weui-btn" type="primary">确定</button>
+    </view>
+    <view class="button-sp-area ">
+      <button bindtap='next' class="weui-btn" type="primary">下一题</button>
+    </view>
+     </form>
+  </view>
+</view>

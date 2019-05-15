@@ -1,0 +1,47 @@
+/* pages/file/letters.wxss */
+@import "../../weui.wxss";
+
+page, .page, .page__bd {
+  height: 100%;
+}
+
+.page__bd {
+  padding-bottom: 0;
+}
+
+.button-hover {
+  background-color: green;
+}
+
+.btn-hover {
+  color: white;
+  border-color: green;
+  background-color: green;
+}
+
+.play {
+  width: 200px;
+  height:  140px;
+}
+.button-sp-area{
+  margin: 10px;
+}
+.play-hover {
+  background-color: lightgrey;
+}
+
+image {
+  width: 128px;
+  height: 128px;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  margin-top: -64px; /* 高度的一半 */
+  margin-left: -64px; /* 宽度的一半 */
+}
+.letter{
+  font-size:40rpx;
+}
+.weui-tab__panel{
+  background-color: #ffffff
+}

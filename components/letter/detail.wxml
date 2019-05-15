@@ -1,0 +1,50 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+      <swiper current='{{activeIndex}}' bindchange="bindChange">
+        <swiper-item>
+          <view class="page">
+            <view class="page__bd page__bd_spacing">
+              <block wx:key="item" wx:for="{{alphabet}}" wx:for-index="idx">
+                <view class="weui-flex">
+                  <block wx:for-item="subitem" wx:for="{{item}}" wx:key="unique">
+                    <view class="weui-flex__item">
+                      <view hover-class="btn-hover" hover-start-time="1" class=" placeholder " bindtap='tabChange' data-idx="{{idx*alphabet[0].length+index}}">{{subitem.letter}}</view>
+                    </view>
+                  </block>
+                </view>
+              </block>
+            </view>
+          </view>
+        </swiper-item>
+
+        <swiper-item>
+          <view class="page">
+            <view class='letter'>{{letter}}</view>
+            <view class='capital'>{{capital}}</view>
+            <view class='voice'>{{voice}}</view>
+            <view class="button-sp-area">
+              <button  class='play' bindtap='audioPlay'  hover-class="play-hover" data-voicepath="{{voicepath}}{{letter}}.mp3"><image src='/images/remind-undress.png' class='remind'></image></button>
+            </view>
+            <view class="button-sp-area">
+              <button bindtap='preLetter' data-preidx="{{preIdx}}" class="weui-btn" type="primary">上一个</button>
+            </view>
+            <view class="button-sp-area ">
+              <button bindtap='nextLetter' data-nextidx="{{nextIdx}}" class="weui-btn" type="primary">下一个</button>
+            </view>
+          </view>
+        </swiper-item>
+        </swiper>
+      </view>
+    </view>
+  </view>
+</view>
